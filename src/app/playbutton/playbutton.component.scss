@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+
+#playbutton{
+    font-family: interMedium;
+    font-size: 14pt;
+    color: $playtextbrown;
+    background-color: $playyellow;
+    padding: 18px 44px 18px 44px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: $lightshadow;
+    text-decoration: none;
+
+    &:hover{
+        filter:brightness(120%);
+        transition: ease-in 150ms;
+    }
+}
