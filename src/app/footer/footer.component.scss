@@ -1,0 +1,77 @@
+@import "../../variables.scss";
+
+#footercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height:140px;
+    background: $darkbg;
+    color:$lightbg;
+    text-align: center;
+    
+    a{
+        text-decoration: none;
+        h2{
+            color:$lightbg;
+            font-family: formula;
+            font-size: 12pt;
+        }
+    }
+
+    p{
+        font-family: InterRegular;
+    }
+
+    #socialscontainer{
+        display: flex;
+        align-items: center;
+        gap:9px;
+
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:32px;
+            height:32px;
+            background: $lightgrey;
+            border-radius: 100%;
+            cursor: pointer;
+            
+            &:hover{
+                filter: brightness(130%);
+            }
+
+            .twitter{background:url(../../assets/twitter.svg);}
+            .youtube{background:url(../../assets/youtube.svg);}
+            .icon {
+                width: 23px;
+                height: 23px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .presskit{
+            background: $lightgrey;
+            color:$lightbg;
+            font-family: InterRegular;
+            font-size: 10pt;
+            padding: 8px;
+            border-radius: 12px;
+
+            &:hover{
+                filter: brightness(130%);
+            }
+        }
+
+    }
+}
+
+@media (max-width: 750px){
+    #footercontainer{
+        flex-direction: column;
+        gap:0px;
+    }
+}

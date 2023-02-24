@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+html {
+    overflow-x: hidden; //Prevent dumb horizontal scrollbar appearing because of the vertical scrollbar appearing ooga booga
+    background-color: #F3F3F3;
+    text-rendering: geometricPrecision;
+
+    body{
+        overflow-x: hidden; //for some reason this is necessary for mobile
+    }
+
+    h2, h3{
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+} 
+
+@font-face {
+    font-family: interMedium;
+    src: url(assets/fonts/Inter-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: interRegular;
+    src: url(assets/fonts/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: formula;
+    src: url(assets/fonts/Formula1-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: mont;
+    src: url(assets/fonts/Mont-HeavyDEMO.otf) format("opentype");
+}
+
+@font-face {
+    font-family: montLight;
+    src: url(assets/fonts/Mont-ExtraLightDEMO.otf) format("opentype");
+}
+
+@font-face {
+    font-family: myanmar;
+    src: url(assets/fonts/mmrtextb.ttf) format("truetype");
+}
