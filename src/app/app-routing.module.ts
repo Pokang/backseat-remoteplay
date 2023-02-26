@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
 import { RemoteComponent } from './remote/remote.component';
+import { ResultsComponent } from './results/results.component';
 
 const routes: Routes = [
-  { path: 'auth-component', component: AuthComponent},
-  { path: 'remote-component', component: RemoteComponent},
+  { path: 'auth', component: AuthComponent},
+  { path: 'remote', component: RemoteComponent},
+  { path: 'results', component: ResultsComponent},
 
   { path: '**', component: AuthComponent }
 
