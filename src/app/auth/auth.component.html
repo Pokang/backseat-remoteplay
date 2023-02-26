@@ -1,9 +1,15 @@
 <div id="authcontainer">
     <div id="authbox">
         <div class="backseatlogo"></div>
-        <input type="text" id="username" name="username" required minlength="3" maxlength="10">
-        <input type="text" id="username" name="username" required minlength="4" maxlength="4">
-        <app-playbutton></app-playbutton>
+        <div class="inputfield">
+            <h2>Username:</h2>
+            <input type="text" id="username" name="username" required minlength="3" maxlength="16" placeholder="My name is..." pattern="[a-zA-Z0-9]">
+        </div>
+        <div class="inputfield">
+            <h2>Game Code:</h2>
+            <input type="text" id="gamecode" name="gamecode" required minlength="4" maxlength="4" placeholder="XXXX" pattern="[A-Z]">
+        </div>
+        <a id="playbutton" routerLink="/remote-component" routerLinkActive="active">Play Now</a>
     </div>
     <app-steambanner></app-steambanner>
     <app-footer></app-footer>

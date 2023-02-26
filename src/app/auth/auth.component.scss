@@ -19,13 +19,71 @@
         justify-content: space-around;
         align-items: center;
         margin-top: 4vh;
+        margin-bottom: 4vh;
+        padding: 20px 0 20px 0;
         width: 550px;
-        height: 430px;
+        height: 470px;
         background: $darkbg;
         border-radius: 20px;
+
+        .backseatlogo{
+            width: 360px;
+            height: 120px;
+            background: url(../../assets/BackseatChampionsLogo.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .inputfield{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 65px;
+
+            h2{
+                color: $lightbg;
+                font-family: Mont;
+                font-size: 12pt;
+            }
+            input{
+                width: 190px;
+                height: 40px;
+                border-radius: 12pt;
+                box-sizing: border-box;
+                border: none;
+                outline: none;
+                padding: 5px;
+
+                font-family: montLight;
+                font-size: 12pt;
+                font-weight: 600;
+            }
+        }
+        #playbutton{
+            font-family: interMedium;
+            font-size: 14pt;
+            color: $playtextbrown;
+            background-color: $playyellow;
+            padding: 18px 44px 18px 44px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            user-select: none;
+            box-shadow: $lightshadow;
+            text-decoration: none;
+            box-sizing: border-box;
+        
+            &:hover{
+                filter:brightness(120%);
+                transition: ease-in 150ms;
+            }
+        }
     }
 
     app-footer{
         width:100%;
     }
 }
+
+@import '../../variables.scss';
+

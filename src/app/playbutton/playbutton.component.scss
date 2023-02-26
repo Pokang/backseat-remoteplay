@@ -12,6 +12,7 @@
     user-select: none;
     box-shadow: $lightshadow;
     text-decoration: none;
+    box-sizing: border-box;
 
     &:hover{
         filter:brightness(120%);
