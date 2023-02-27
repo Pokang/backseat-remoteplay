@@ -9,7 +9,7 @@ export class RemoteComponent implements OnInit {
 
   constructor() { }
   rows:ElementRef[] = new Array(4);
-  toggle:boolean[][] = Array.from(Array(4), () => new Array(4));
+  toggle:boolean[][] = Array.from(Array(4), () => new Array(4)); //Nested array for dial categories and dials within the categories, 4 arrays, 4 max dials per array.
 
 
   change(row:number, index:number){

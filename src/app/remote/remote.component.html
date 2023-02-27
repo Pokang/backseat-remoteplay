@@ -31,11 +31,11 @@
                 <h2>Battery Economy 🔋</h2>
             </div>
             <div class="dialrow">
-                <div (click)="change(0,0)" [ngClass]="{'selectedbattery': toggle[0][0]}" class="dial">
+                <div (click)="change(0,0)" [ngClass]="{'selectedbattery': toggle[0][0]}" class="dial"> <!-- (click) Adds the class iconselected on click -->
                     <div class="battery1 icon" [ngClass]="{'iconselected': toggle[0][0]}"></div>
                 </div>
                 <div (click)="change(0,1)" [ngClass]="{'selectedbattery': toggle[0][1]}" class="dial">
-                    <div class="battery2 icon" [ngClass]="{'iconselected': toggle[0][1]}"></div> <!-- Adds the class iconselected on click -->
+                    <div class="battery2 icon" [ngClass]="{'iconselected': toggle[0][1]}"></div>
                 </div>
                 <div (click)="change(0,2)" [ngClass]="{'selectedbattery': toggle[0][2]}" class="dial">
                     <div class="battery3 icon" [ngClass]="{'iconselected': toggle[0][2]}"></div>
