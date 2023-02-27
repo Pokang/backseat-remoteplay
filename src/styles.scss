@@ -4,7 +4,6 @@
 html {
     overflow-x: hidden; //Prevent dumb horizontal scrollbar appearing because of the vertical scrollbar appearing ooga booga
     background-color: #F3F3F3;
-    text-rendering: geometricPrecision;
 
     body{
         overflow-x: hidden; //for some reason this is necessary for mobile
@@ -44,5 +43,5 @@ html {
 
 @font-face {
     font-family: myanmar;
-    src: url(assets/fonts/mmrtextb.ttf) format("truetype");
+    src: url(assets/fonts/mmrtext.ttf) format("truetype");
 }

@@ -1,12 +1,106 @@
+@import '../../variables.scss';
+
 #remotecontainer{
     width:100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-image: url(../../assets/remotebg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    .backseatlogo{
+        margin-top: 4vh;
+        width: 360px;
+        height: 120px;
+        background: url(../../assets/BackseatChampionsLogo.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #remotebox{
+        margin-top: 2vh;
+        width: 550px;
+        height: 96vh;
+        background: $remotebg;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding:42px;
+
+        .dialrow{
+            display: flex;
+            justify-content: space-around;
+            .dial{
+                width:85px;
+                height: 85px;
+                border-radius: 100%;
+                background:$dialbg;
+                stroke: solid 2px $remotebg;
+            }
+            .selected{
+                stroke: solid 2px #6b94FE;
+            }
+        }
+
+        #usersection{
+            display: flex;
+
+            #userpicture{
+                width: 65px;
+                height: 65px;
+                border-radius: 100%;
+                background-color: black;
+                border: solid $usercolor 2px;
+                box-shadow: ($userglow);
+            }
+
+            #remotetoptext{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 65px;
+                margin-left: 20px;
+
+                #remotetitle{
+                    font-size: 22pt;
+                    color:$lightbg;
+                    font-family: Mont;
+                    text-shadow: $textglow;
+
+                }
+                #remotesubmessage{
+                    font-size: 10pt;
+                    color:$inactive;
+                    font-family: Myanmar;
+                    font-weight: 600;
+                    letter-spacing: 0.3pt;
+                }
+            }
+        }
+        #statussection{
+            font-size: 22pt;
+            color:$lightbg;
+            font-family: Mont;
+            text-shadow: $textglow;
+
+        }
+    }
+
+    #popupboxes{
+        width: 400px;
+
+        .popup{
+            margin-top: 2vh;
+            background: $remotebg;
+            height: auto;
+            color: $lightbg;
+            padding: 40px;
+            text-align: center;
+            font-family: Mont;
+            font-size: 16pt;
+            border-radius: 30px;
+        }
+    }
 }
