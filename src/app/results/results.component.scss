@@ -1,0 +1,79 @@
+@import '../../variables.scss';
+
+#authcontainer{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../../assets/authbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    #authbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        padding: 20px 0 20px 0;
+        width: 550px;
+        height: 470px;
+        background-image: url(../../assets/resultsframebg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+
+        .backseatlogo{
+            width: 360px;
+            height: 120px;
+            background: url(../../assets/BackseatChampionsLogo.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h1{
+            color:$lightbg;
+            font-family: Mont;
+            font-size: 24pt;
+        }
+        h2{
+            color:$playyellow;
+            font-family: Mont;
+            font-size: 36pt;
+            text-shadow: $playglow;
+        }
+
+        #playbutton{
+            font-family: interMedium;
+            font-size: 14pt;
+            color: $playtextbrown;
+            background-color: $playyellow;
+            padding: 18px 44px 18px 44px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            user-select: none;
+            box-shadow: $lightshadow;
+            text-decoration: none;
+            box-sizing: border-box;
+        
+            &:hover{
+                filter:brightness(120%);
+                transition: ease-in 150ms;
+            }
+        }
+    }
+
+    app-footer{
+        width:100%;
+    }
+}
+
+@import '../../variables.scss';
+
