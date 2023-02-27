@@ -48,8 +48,14 @@
                 stroke: solid 2px $remotebg;
                 &:hover{
                     filter:brightness(120%);
-                    transition: ease-in 150ms;
+                    transition: ease-in-out 150ms;
                     cursor: pointer;
+                }
+
+                .icon{
+                    height: 42px;
+                    width: 42px;
+                    transition: .25s;
                 }
             }
             .selected{

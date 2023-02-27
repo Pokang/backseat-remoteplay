@@ -1,47 +1,66 @@
 .battery1{
-    height: 42px;
-    width: 42px;
-    background:red;
+    background: no-repeat center url(../../assets/icons/battery1.svg);
+    .iconselected{background: no-repeat center url(../../assets/icons/battery1_s.svg);}
 }
 .battery2{
+    background: no-repeat center url(../../assets/icons/battery2.svg);
+    .iconselected{background: no-repeat center url(../../assets/icons/battery2_s.svg);}
 
 }
 .battery3{
-
+    background: no-repeat center url(../../assets/icons/battery3.svg);
+    .iconselected{background: no-repeat center url(../../assets/icons/battery3_s.svg);}
 }
 
 .tire1{
-    
+    background: no-repeat center url(../../assets/icons/tire1.png);
+    background-size: contain;
+    .iconselected{background: no-repeat center url(../../assets/icons/tire1_s.png);}
 }
 .tire2{
-
+    background: no-repeat center url(../../assets/icons/tire2.png);
+    background-size: contain;
+    .iconselected{background: no-repeat center url(../../assets/icons/tire2_s.png);}
 }
 .tire3{
-
+    background: no-repeat center url(../../assets/icons/tire3.png);
+    background-size: contain;
+    .iconselected{background: no-repeat center url(../../assets/icons/tire3_s.png);}
 }
 .tire4{
-
+    background: no-repeat center url(../../assets/icons/tire4.png);
+    background-size: contain;
+    .iconselected{background: no-repeat center url(../../assets/icons/tire4_s.png);}
 }
 
 .engine1{
-    
+    background: no-repeat center url(../../assets/icons/engine1.svg);
+    background-size: contain;
+    .iconselected{background: no-repeat center url(../../assets/icons/engine1_s.svg);}
 }
 .engine2{
-
+    background: no-repeat center url(../../assets/icons/engine2.svg);
+    .iconselected{background: no-repeat center url(../../assets/icons/engine2_s.svg);}
 }
 .engine3{
-
+    background: no-repeat center url(../../assets/icons/engine3.svg);
+    .iconselected{background: no-repeat center url(../../assets/icons/engine3_s.svg);}
 }
 .engine4{
-
+    background: no-repeat center url(../../assets/icons/engine4.svg);
+    .iconselected{background: no-repeat center url(../../assets/icons/engine4_s.svg);}
 }
 
 .passive1{
-    
+    background: no-repeat center url(../../assets/icons/passive1.png);
+    background-size: contain;
+    .iconselected{background: no-repeat center url(../../assets/icons/passive1_s.png);}
 }
 .passive2{
-
+    background: no-repeat center url(../../assets/icons/passive2.svg);
+    .iconselected{background: no-repeat center url(../../assets/icons/passive2_s.svg);}
 }
 .passive3{
-
+    background: no-repeat center url(../../assets/icons/passive3.svg);
+    .iconselected{background: no-repeat center url(../../assets/icons/passive3_s.svg);}
 }
