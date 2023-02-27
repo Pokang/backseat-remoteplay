@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-remote',
@@ -8,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class RemoteComponent implements OnInit {
 
   constructor() { }
-  toggle:boolean[] = new Array(16);
+  rows:ElementRef[] = new Array(4);
+  toggle:boolean[][] = Array.from(Array(4), () => new Array(4));
 
 
-  change(index:number){
-    this.toggle[index] = !this.toggle[index];
-  } //This needs to take into account that only one dial can be pressed at once
+  change(row:number, index:number){
+    for (let i=0;i<this.toggle[row].length;i++){
+      this.toggle[row][i] = false;
+    }
+    this.toggle[row][index] = !this.toggle[row][index];
+  }
 
   ngOnInit(): void {
   }
