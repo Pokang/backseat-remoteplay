@@ -45,7 +45,7 @@
                 height:82px;
                 border-radius: 100%;
                 background:$dialbg;
-                stroke: solid 2px $remotebg;
+                border: 2px solid $remotebg;
                 &:hover{
                     filter:brightness(120%);
                     transition: ease-in-out 150ms;
@@ -59,7 +59,7 @@
                 }
             }
             .selected{
-                stroke: solid 2px #6b94FE;
+                border: solid 2px #6b94FE;
             }
         }
 

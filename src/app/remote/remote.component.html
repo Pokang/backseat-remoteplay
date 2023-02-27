@@ -31,14 +31,14 @@
                 <h2>Battery Economy 🔋</h2>
             </div>
             <div class="dialrow">
-                <div class="dial selected">
-                    <div class="battery1 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(1)" [ngClass]="{'selected': toggle[1]}" class="dial">
+                    <div class="battery1 icon" [ngClass]="{'iconselected': toggle[1]}"></div>
                 </div>
-                <div (click)="change()" class="dial">
-                    <div class="battery2 icon" [ngClass]="{'iconselected': !toggle}"></div> <!-- Adds the class iconselected on click -->
+                <div (click)="change(2)" [ngClass]="{'selected': toggle[2]}" class="dial">
+                    <div class="battery2 icon" [ngClass]="{'iconselected': toggle[2]}"></div> <!-- Adds the class iconselected on click -->
                 </div>
-                <div (click)="change()" class="dial">
-                    <div class="battery3 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(3)" [ngClass]="{'selected': toggle[3]}" class="dial">
+                    <div class="battery3 icon" [ngClass]="{'iconselected': toggle[3]}"></div>
                 </div>
             </div>
         </div>
@@ -46,48 +46,48 @@
             <h2>Tire Wear Management ♟</h2>
             <h3>Requires a pit stop</h3>
             <div class="dialrow">
-                <div (click)="change()" class="dial">
-                    <div class="tire1 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(4)" [ngClass]="{'selected': toggle[4]}" class="dial">
+                    <div class="tire1 icon" [ngClass]="{'iconselected': toggle[4]}"></div>
                 </div>
-                <div (click)="change()" class="dial">
-                    <div class="tire2 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(5)" [ngClass]="{'selected': toggle[5]}" class="dial">
+                    <div class="tire2 icon" [ngClass]="{'iconselected': toggle[5]}"></div>
                 </div>
-                <div (click)="change()" class="dial">
-                    <div class="tire3 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(6)" [ngClass]="{'selected': toggle[6]}" class="dial">
+                    <div class="tire3 icon" [ngClass]="{'iconselected': toggle[6]}"></div>
                 </div>
-                <div class="dial selected">
-                    <div class="tire4 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(7)" [ngClass]="{'selected': toggle[7]}" class="dial">
+                    <div class="tire4 icon" [ngClass]="{'iconselected': toggle[7]}"></div>
                 </div>
             </div>
         </div>
         <div id="enginesection">
             <h2>Engine Type 🚂</h2>
             <div class="dialrow">
-                <div (click)="change()" class="dial selected">
-                    <div class="engine1 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(8)" [ngClass]="{'selected': toggle[8]}" class="dial">
+                    <div class="engine1 icon" [ngClass]="{'iconselected': toggle[8]}"></div>
                 </div>
-                <div (click)="change()" class="dial">
-                    <div class="engine2 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(9)" [ngClass]="{'selected': toggle[9]}" class="dial">
+                    <div class="engine2 icon" [ngClass]="{'iconselected': toggle[9]}"></div>
                 </div>
-                <div (click)="change()" class="dial">
-                    <div class="engine3 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(10)" [ngClass]="{'selected': toggle[10]}" class="dial">
+                    <div class="engine3 icon" [ngClass]="{'iconselected': toggle[10]}"></div>
                 </div>
-                <div (click)="change()" class="dial">
-                    <div class="engine4 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(11)" [ngClass]="{'selected': toggle[11]}" class="dial">
+                    <div class="engine4 icon" [ngClass]="{'iconselected': toggle[11]}"></div>
                 </div>
             </div>
         </div>
         <div id="passivesection">
             <h2>Passive Effect 🏎</h2>
             <div class="dialrow">
-                <div (click)="change()" class="dial">
-                    <div class="passive1 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(12)" [ngClass]="{'selected': toggle[12]}" class="dial">
+                    <div class="passive1 icon" [ngClass]="{'iconselected': toggle[12]}"></div>
                 </div>
-                <div (click)="change()" class="dial selected">
-                    <div class="passive2 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(13)" [ngClass]="{'selected': toggle[13]}" class="dial">
+                    <div class="passive2 icon" [ngClass]="{'iconselected': toggle[13]}"></div>
                 </div>
-                <div (click)="change()" class="dial">
-                    <div class="passive3 icon" [ngClass]="{'iconselected': !toggle}"></div>
+                <div (click)="change(14)" [ngClass]="{'selected': toggle[14]}" class="dial">
+                    <div class="passive3 icon" [ngClass]="{'iconselected': toggle[14]}"></div>
                 </div>
             </div>
         </div>
