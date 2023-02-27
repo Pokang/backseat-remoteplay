@@ -93,9 +93,12 @@
                 box-shadow: ($userglow);
 
                 #userid{
+                    width:40px;
+                    height: 35px;
                     color:$lightbg;
                     font-family: myanmar;
                     font-size: 26pt;
+                    text-align: center;
                 }
             }
 
