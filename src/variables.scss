@@ -1,16 +1,31 @@
+//BC Colors
 $playyellow: #F7A419;
 $playtextbrown: #7B510A;
 $darkbg: #222224;
 $lightbg: #F3F3F3;
 $lightgrey: #474747;
 
+//User-specific colors
 $usercolor: #DD3838;
 $userglow: 0px 0px 20px 7px rgba(255, 92, 0, 0.1);
 
+//Remote auxiliary colors
 $remotebg: #171718;
 $inactive: #939393;
 $subpassive: #9aa788;
 $dialbg: radial-gradient(50% 50% at 50% 50%, #28292C 0%, #252629 100%, #252629 100%, #252629 100%);
 
+//Dial Category colors
+$battery:#6b94FE;
+$tire:#10DF25;
+$engine:#DF10B2;
+$passive: #DF3510;
+
+//Glows and shadows
 $lightshadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 $textglow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+$batteryglow: 0px 0px 17.4316px 4.84211px rgba(2, 118, 255, 0.2);
+$tireglow: 0px 0px 17.4316px 4.84211px rgba(38, 255, 2, 0.2);
+$engineglow: 0px 0px 17.4316px 4.84211px rgba(255, 2, 154, 0.2);
+$passiveglow: 0px 0px 17.4316px 4.84211px rgba(255, 63, 2, 0.2);
+$playglow: 0px 0px 20px rgba(247, 164, 25, 0.5);

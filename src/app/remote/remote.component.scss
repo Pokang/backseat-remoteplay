@@ -58,8 +58,23 @@
                     transition: .25s;
                 }
             }
-            .selected{
-                border: solid 2px #6b94FE;
+
+            // Highlight colors of each category
+            .selectedbattery{
+                border: solid 2px $battery;
+                box-shadow: $batteryglow;
+            }
+            .selectedtire{
+                border: solid 2px $tire;
+                box-shadow: $tireglow;
+            }
+            .selectedengine{
+                border: solid 2px $engine;
+                box-shadow: $engineglow;
+            }
+            .selectedpassive{
+                border: solid 2px $passive;
+                box-shadow: $passiveglow;
             }
         }
 
@@ -67,12 +82,21 @@
             display: flex;
 
             #userpicture{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 65px;
                 height: 65px;
                 border-radius: 100%;
                 background-color: black;
                 border: solid $usercolor 2px;
                 box-shadow: ($userglow);
+
+                #userid{
+                    color:$lightbg;
+                    font-family: myanmar;
+                    font-size: 26pt;
+                }
             }
 
             #remotetoptext{
@@ -126,10 +150,10 @@
             background: $remotebg;
             height: auto;
             color: $lightbg;
-            padding: 40px;
+            padding: 30px;
             text-align: center;
             font-family: Mont;
-            font-size: 16pt;
+            font-size: 14pt;
             border-radius: 30px;
         }
     }
